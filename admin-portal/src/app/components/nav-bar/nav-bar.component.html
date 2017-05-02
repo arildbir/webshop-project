@@ -1,0 +1,10 @@
+<md-toolbar class="mat-primary">
+  <h3 [style.color]="'white'">Admin portal</h3>
+  <span class="example-spacer"></span>
+  <span [hidden]="!logedIn"><a md-button>Se liste av bøker</a></span>
+  <span [hidden]="!logedIn"><a md-button routerLink="/addNewBook">Legg til bok</a></span>
+  <span [hidden]="!logedIn"><a md-button (click)="logout()">Logg ut</a></span>
+
+</md-toolbar>
+
+<!--<button md-raised-button class="mat-warn" (click)="toggleDisplay()">Vis innloggede knapper</button>-->
